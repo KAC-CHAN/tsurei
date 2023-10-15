@@ -11,7 +11,7 @@ services:
     volumes:
       - ./tsurei:/tsurei:Z
       - ./tsurei/tsurei/static/:/tsurei/tsurei/static/
-      - ./tsurei/tsurei/static/manga:/tsurei/tsurei/static/manga
+      - ./tsurei/tsurei/static/manga:/tsurei/tsurei/static/manga/
     env_file:
       - ./tsurei/tsurei/.env
     depends_on:
