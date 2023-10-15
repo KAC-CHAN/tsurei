@@ -9,7 +9,7 @@ services:
     ports:
       - 8000:8000
     volumes:
-      - ./tsurei:/tsurei:Z
+      - ./tsurei:/tsurei
       - ./tsurei/tsurei/static/:/tsurei/tsurei/static/
       - ./tsurei/tsurei/static/manga:/tsurei/tsurei/static/manga/
     env_file:
@@ -20,6 +20,6 @@ services:
     container_name: psql
     image: postgres:13-alpine
     volumes:
-      - ./data:/var/lib/postgresql/data:z
+      - ./data:/var/lib/postgresql/data
     env_file:
       - ./tsurei/tsurei/.env
